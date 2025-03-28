@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Produtos</h1>
+    </header>
+    <div class="container">
+        <button id="novo-produto-btn" class="novo-produto-btn">Novo Produto</button>
+        <div id="produtos-list" class="produtos-list">
+            <!-- A tabela será carregada aqui pelo script -->
+        </div>
+        <button onclick="navigateTo('index.html')">Voltar</button>
+    </div>
+
+    <!-- Modal para cadastro de novo produto -->
+    <div id="modal-cadastro" class="modal hidden">
+        <div class="modal-content">
+            <h2>Cadastrar Novo Produto</h2>
+            <form id="form-cadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+                <label for="preco-custo">Valor de Custo:</label>
+                <input type="number" id="preco-custo" name="preco-custo" step="0.01" required>
+                <label for="preco-venda">Valor Final:</label>
+                <input type="number" id="preco-venda" name="preco-venda" step="0.01" required>
+                <button type="submit">Salvar</button>
+                <button type="button" id="fechar-modal">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Desenvolvido por Lohaine Mattos</p>
+    </footer>
+    <script src="scriptproduto.js"></script>
+</body>
+</html>

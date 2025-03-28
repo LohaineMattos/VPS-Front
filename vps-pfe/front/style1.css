@@ -1,0 +1,117 @@
+.novo-produto-btn {
+    background-color: #7f644f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.novo-produto-btn:hover {
+    background-color: #5e4a3a;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #7f644f;
+    color: white;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #5e4a3a;
+}
+
+.modal-content button#fechar-modal {
+    background-color: #ccc;
+}
+
+.modal-content button#fechar-modal:hover {
+    background-color: #aaa;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+th {
+    background-color: #7f644f;
+    color: white;
+}
+
+td {
+    background-color: #f4f4f4;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #7f644f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #5e4a3a;
+}
+
+body{
+    background: #b2aaa6;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}

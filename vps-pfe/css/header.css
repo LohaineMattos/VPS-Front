@@ -1,0 +1,11 @@
+
+    header{
+        background-color: #35180b;
+        color: #b2aaa6;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+        margin: 0;
+        font-size: 18px;
+    }
